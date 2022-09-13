@@ -18,20 +18,17 @@ classifiers = [
 python = "^3.10"
 fastapi = "^0.83.0"
 
-[tool.poetry.dev-dependencies]
-ipython = "^8.4.0"
-black = "^22.3.0"
-mypy = "^0.961"
-pylint = "^2.14.2"
-pytest = "^7.1.2"
-coverage = "^6.4.1"
-pre-commit = "^2.19.0"
-pytest-cov = "^3.0.0"
-
 [tool.poetry.group.dev.dependencies]
-requests = "^2.28.1"
+black = "^22.3.0"
+coverage = "^6.4.1"
+ipython = "^8.4.0"
+mypy = "^0.961"
+pre-commit = "^2.19.0"
 pylint = "^2.15.2"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
 pyupgrade = "^2.37.3"
+requests = "^2.28.1"
 
 [tool.isort]
 profile = "black"
