@@ -16,6 +16,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.83.0"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.4.0"
@@ -26,6 +27,11 @@ pytest = "^7.1.2"
 coverage = "^6.4.1"
 pre-commit = "^2.19.0"
 pytest-cov = "^3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.28.1"
+pylint = "^2.15.2"
+pyupgrade = "^2.37.3"
 
 [tool.isort]
 profile = "black"
