@@ -1,0 +1,10 @@
+.python-version
+__pycache__
+.vscode
+
+.coverage
+cov.xml
+.env
+.envrc
+
+dist
