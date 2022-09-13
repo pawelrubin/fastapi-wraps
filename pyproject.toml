@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fastapi-wraps"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Paweł Rubin <pawelrubindev@gmail.com>"]
 keywords = ["fastapi", "decorator", "functools"]
