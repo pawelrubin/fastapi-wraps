@@ -16,6 +16,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.83.0"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.4.0"
