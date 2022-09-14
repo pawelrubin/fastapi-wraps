@@ -1,5 +1,9 @@
 # fastapi-wraps
 
+[![Python 3.10](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![codecov](https://codecov.io/gh/pawelrubin/fastapi-wraps/branch/main/graph/badge.svg)](https://codecov.io/gh/pawelrubin/fastapi-wraps)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/pawelrubin/fastapi-wraps/blob/main/LICENSE)
+
 
 ## Installation
 

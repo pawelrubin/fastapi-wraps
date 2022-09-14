@@ -152,7 +152,6 @@ disable=raw-checker-failed,
         deprecated-pragma,
         use-symbolic-message-instead,
         no-member,  # mypy covers that, pylint has some bugs
-        invalid-name,  # irrelevant, we follow whatever is in Rust docs/examples
         missing-function-docstring,
         missing-module-docstring,
         missing-class-docstring,
