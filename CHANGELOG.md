@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/pawelrubin/fastapi-wraps/compare/v0.1.1...v0.1.2) (2022-09-14)
+
+
+### Bug Fixes
+
+* Add py.typed marker file. ([a73e1d0](https://github.com/pawelrubin/fastapi-wraps/commit/a73e1d0b43116181b5a6fb715fd9624dd382c65b))
+
 ## [0.1.1](https://github.com/pawelrubin/fastapi-wraps/compare/v0.1.0...v0.1.1) (2022-09-13)
 
 
