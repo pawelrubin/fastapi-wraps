@@ -4,6 +4,17 @@
 [![codecov](https://codecov.io/gh/pawelrubin/fastapi-wraps/branch/main/graph/badge.svg)](https://codecov.io/gh/pawelrubin/fastapi-wraps)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/pawelrubin/fastapi-wraps/blob/main/LICENSE)
 
+`functools.wraps` for endpoints decorators in FastAPI.
+
+It updates the signature of the wrapped function
+with parameters defined in the decorator's wrapper function.
+All parameters of the wrapper function should have defaults assigned.
+
+It's advised to name the parameter with some prefix, for example `__`,
+to avoid any name conflicts in decorated functions.
+
+To use the Request object in the decorator's wrapper function
+use `__request: Request = Depends(get_request)`
 
 ## Installation
 
