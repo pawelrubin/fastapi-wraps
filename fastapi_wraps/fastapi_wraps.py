@@ -33,16 +33,16 @@ def fastapi_wraps(
     wrapped: Callable[P, RT]
 ) -> Callable[[Callable[..., Any]], Callable[P, RT]]:
     """
-    functools.wraps for fastapi endpoints.
+    functools.wraps for endpoints decorators in FastAPI.
 
     It updates the signature of the wrapped function
-    with parameters defined in the decorator.
+    with parameters defined in the decorator's wrapper function.
     All parameters of the wrapper function should have defaults assigned.
 
     It's advised to name the parameter with some prefix, for example `__`,
     to avoid any name conflicts in decorated functions.
 
-    To use the Request object in the decorator
+    To use the Request object in the decorator's wrapper function
     use `__request: Request = Depends(get_request)`
 
     ## Example usage
@@ -52,8 +52,8 @@ def fastapi_wraps(
     ) -> Callable[P, Awaitable[RT]]:
         @fastapi_wraps(endpoint)
         async def wrapper(
-            __request: Request = Depends(get_request),
             *args: P.args,
+            __request: Request = Depends(get_request),
             **kwargs: P.kwargs,
         ) -> RT:
             print(__request)
