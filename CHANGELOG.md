@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/pawelrubin/fastapi-wraps/compare/v0.1.3...v0.1.4) (2022-09-14)
+
+
+### Documentation
+
+* Improve README ([8cda88d](https://github.com/pawelrubin/fastapi-wraps/commit/8cda88d757e910b487184f8bf22a53e9d0aca5b3))
+
 ## [0.1.3](https://github.com/pawelrubin/fastapi-wraps/compare/v0.1.2...v0.1.3) (2022-09-14)
 
 
