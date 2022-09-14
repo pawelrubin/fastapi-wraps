@@ -12,18 +12,20 @@ classifiers = [
   "Development Status :: 3 - Alpha",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: Implementation :: CPython",
+  "Typing :: Typed",
 ]
+include = ["fastapi_wraps/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 fastapi = "^0.83.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.3.0"
-coverage = "^6.4.1"
-ipython = "^8.4.0"
-mypy = "^0.961"
-pre-commit = "^2.19.0"
+black = "^22.8.0"
+coverage = "^6.4.4"
+ipython = "^8.5.0"
+mypy = "^0.971"
+pre-commit = "^2.20.0"
 pylint = "^2.15.2"
 pytest = "^7.1.2"
 pytest-cov = "^3.0.0"
