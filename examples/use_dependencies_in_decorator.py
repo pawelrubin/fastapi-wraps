@@ -1,15 +1,23 @@
-# fastapi-wraps
+from collections.abc import Awaitable, Callable
+from typing import Any, ParamSpec, TypeVar
+
+from fastapi import Depends, FastAPI, Request
+
+from fastapi_wraps import fastapi_wraps, get_request
+
+P = ParamSpec("P")
+RT = TypeVar("RT")
 
 
-## Installation
+class Db:
+    def save(self, data: Any) -> None:
+        print(f"saving {data} to DB")
 
-```shell
-pip install fastapi-wraps
-```
 
-## Example
+def get_db() -> Db:
+    return Db()
 
-```python
+
 def save_request(
     endpoint: Callable[P, Awaitable[RT]],
 ) -> Callable[P, Awaitable[RT]]:
@@ -34,9 +42,3 @@ app = FastAPI()
 @save_request
 async def hello() -> str:
     return "hello"
-```
-
-## Why?
-
-To use dependencies provided by FastAPI's DI framework all dependencies have to be declared in the signature of the endpoint.
-Hence, the decorator cannot simply use `functools.wraps`, as `functools.wraps` maintains the signature of the wrapped function. The `fastapi_wraps` decorator takes updates the resulting signature by merging parameters from the `wrapper` and the `wrapped` function.

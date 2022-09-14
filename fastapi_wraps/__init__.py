@@ -1,5 +1,5 @@
 from .fastapi_wraps import fastapi_wraps
-from .wrappers import get_request, get_response
+from .providers import get_request, get_response
 
 __all__ = [
     "fastapi_wraps",
