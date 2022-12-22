@@ -22,7 +22,7 @@ fastapi = "^0.83.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"
-coverage = "^6.4.4"
+coverage = "^7.0.0"
 ipython = "^8.5.0"
 mypy = "^0.971"
 pre-commit = "^2.20.0"
