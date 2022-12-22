@@ -18,7 +18,7 @@ include = ["fastapi_wraps/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.83.0"
+fastapi = "^0.88.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"
